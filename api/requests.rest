@@ -1,0 +1,18 @@
+GET http://localhosts:3001/todos
+
+###
+POST http://localhosts:3001/todos/new url HTTP/1.1
+Content-Type: application/json
+{
+    "text":"Get the things ready",
+}
+
+###
+DELETE  http://localhost:3001/todo/delete
+
+###
+
+GET http://localhost:3001/todo/complete/60e585d86177f95ff0574323
+
+###
+PUT  http://localhost:3001/todo/complete
